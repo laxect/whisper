@@ -1,3 +1,3 @@
 #!/usr/bin/env zsh
 
-secret-tool lookup Type Menu App `whisper | bemenu` | wl-copy
+secret-tool lookup Type Menu App `whisper | bemenu` | wtype -
