@@ -11,7 +11,7 @@ fn main() -> Result<()> {
     let res = libsecret::password_search_sync(None, attr, flags, Option::<&Cancellable>::None)?;
     for entry in res {
         if let Some(app) = entry.attributes().get("App") {
-            println!("{app}");
+            println!("{}", app);
         }
     }
     Ok(())
